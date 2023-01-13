@@ -1,0 +1,443 @@
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    height:555vh; width: 100%;
+    background-color: #e5e5e5;
+}
+nav{
+    height: 10vh; width: 100%;
+    background-color: white;
+    display: flex; justify-content: center;
+    
+    /* below line to aline list in vertical |  */
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+ul>li{
+    float: left; padding: 20px;
+}
+li:hover{
+    cursor: pointer;
+}
+
+.header_pic_img{
+    height: auto;  /* for responsive img */
+    width: 100%;
+    z-index: 1px;
+}
+.name_coder{
+    height:40vh; width: 60%; 
+    background-color:rgba(0, 0, 0, 0.34) ;
+
+    /* b0x in img */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+.header_name{
+    height: 15vh; 
+    width: 100%; 
+    color: aliceblue;
+    /* background-color: yellow; */
+    display: flex; justify-content: center; align-items: center;
+    font-size: 3rem;
+    /* font-size: 2.5rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 4px; */
+}
+.header_para{
+    height: 25vh; width: 100%; color: aliceblue;
+     /* background-color: rgb(255, 149, 0); */
+    /* display: flex; justify-content: center;  */
+    text-align: center; 
+    /* font-size: 1rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+    
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ABOUT PAGE */
+
+.about{
+    height: 120vh; width: 100%; 
+    /* background-color: aqua; */
+
+    display: grid;
+    grid-template-rows: 15rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 100px;
+}
+.abt{
+    /* background-color: blueviolet; */
+    grid-column: 1/3; padding-top: 25px; 
+    margin-left: 200px; margin-right: 200px;
+}
+.abt > h1{
+    /* font-size: 2rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+    font-size: 2rem;
+    display: flex; justify-content: center; padding: 20px; 
+}
+.abt > p {
+    /* font-size: 1rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+    text-align: center; line-height: 26px;
+}
+
+.des{
+    /* background-color: blueviolet; */
+    margin-left: 70px; 
+}
+.des > h1{
+    /* font-size: 1.5rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px;  */
+    font-size: 2rem;
+}
+.des > p{
+    /* font-size: 1rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+    padding-top: 20px; line-height: 30px; 
+}
+.cont_me_btn{
+    padding: 20px 40px; margin-top: 40px; color: white;
+    background-color: rgb(71, 86, 254); border:none ; border-radius: 10px;
+    font-weight:bolder;
+}
+.cont_me_btn:hover{
+    cursor: pointer;
+}
+
+.skill{
+    /* background-color: blueviolet; */
+    margin-right: 70px; 
+}
+.skill > h1{
+    /* font-size: 1.5rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px;   */
+    font-size: 2rem;
+    padding-bottom: 50px;   
+}
+.skill > ul >li{
+    /* font-family: Georgia, 'Times New Roman', Times, serif;; */
+    background-color: rgb(255, 255, 255); border-radius: 10px; 
+    margin: 5px;
+}
+.res_btn{
+    padding: 20px 40px; margin-top: 220px; color: white;
+    background-color: rgb(71, 86, 254); border:none ; border-radius: 10px;
+    font-weight:bolder; 
+    display: flex; justify-content: left; margin-bottom: 0px;
+}
+.res_btn:hover{
+    cursor: pointer;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.project{
+    height: 120vh; width: 100%; 
+    background-color: #a0aeb5; 
+
+    display: grid;
+    grid-template-rows: 20vh 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: 10px;
+    column-gap: 10 px;
+}
+.project_item{
+    /* background-color: red; */
+    margin: 30px;
+}
+.project_item > h1{
+    font-size: 2.3rem;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+    display: flex; justify-content: center; 
+    color: white; 
+    padding: 50px; 
+    /* margin-top: 50px; */
+}
+
+#pro_text{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column: 1/4;
+}
+
+/* project 1 inner css!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#pro_1{
+    background-color: #e6e6e6;
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* grid-row: 1/3;  this will overlap*/
+    grid-row-start: 2; grid-row-end: 4;
+    border-radius: 20px;
+    
+    /* display: flex; justify-content: center; this is causeing unwanted result*/
+}
+.project1_img{
+    height: 220px; width: 100%;
+    display: flex; justify-content: center; 
+    /* background-color: red; */
+    float: left;
+}
+.proj_1_img{
+    height: 180px; width: 80%;
+    border-radius: 20px;
+    /* display: flex; justify-content: center; */
+    margin-top: 15px;
+}
+.pro_1_head{
+    height: 60px; width: 100%; font-size: 2rem;
+    /* background-color: green;  */
+    float: left;
+    display: flex; justify-content: center;
+    /* font-size: 2rem; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+}
+.pro_1_content{
+    height: 150px; width: 100%;
+    display: flex; justify-content: center;
+    /* align-items: center; */
+    /* background-color: blue;  */
+    float: left; padding-left: 30px;
+    inline-size: 300px; /* line limited to 300px */
+    overflow-wrap: inherit;
+
+    line-height: 20px;
+}
+.pro_1_btn{
+    padding: 20px 40px; margin-top: 250px; color: white;
+    background-color:green; 
+    border:none ; border-radius: 10px;
+    font-weight:bolder; 
+    display: flex; justify-content: left; 
+}
+.pro_1_btn:hover{
+    cursor: pointer;
+}
+
+/* project 2 inner css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#pro_2{
+    background-color: #e6e6e6;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* grid-row: 1/3;  this will overlap*/
+    grid-row-start: 2; grid-row-end: 4;
+    border-radius: 20px;
+
+}
+.project2_img{
+    height: 220px; width: 100%;
+    display: flex; justify-content: center; 
+    /* background-color: red; */
+    /* float: left; */
+}
+.proj_2_img{
+    height: 180px; width: 80%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.pro_2_head{
+    height:60px; width:100%;
+    /* background-color: yellow; */
+    float: left;
+    display: flex; justify-content: center;
+    font-size: 2rem; 
+    /* font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+}
+.pro_2_content{
+    height: 150px; width: 100%;
+    display: flex; justify-content: center;
+    /* align-items: center; */
+    /* background-color: blue;  */
+    float: left; padding-left: 30px;
+    inline-size: 300px; /* line limited to 300px */
+    overflow-wrap: inherit;
+
+    line-height: 20px;
+}
+.pro_2_btn{
+    padding: 20px 40px;
+    /* margin-top: 250px;  */
+    color: white;
+    background-color:green; 
+    border:none ; border-radius: 10px;
+    font-weight:bolder; 
+    display: flex; justify-content: left; 
+}
+.pro_2_btn:hover{
+    cursor: pointer;
+}
+
+/* project 3 inner css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#pro_3{
+    background-color: #e6e6e6;
+    
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /* grid-row: 1/3;  this will overlap*/
+    grid-row-start: 2; grid-row-end: 4;
+    border-radius: 20px;
+    
+    /* display: flex; justify-content: center; (don;t need this)*/
+}
+.project3_img{
+    height: 220px; width: 100%;
+    display: flex; justify-content: center; 
+    /* background-color: red; */
+    /* float: left; */
+}
+.proj_3_img{
+    height: 180px; width: 80%;
+    border-radius: 20px;
+    /* display: flex; justify-content: center; */
+    margin-top: 15px;
+}
+.pro_3_head{
+    height:60px; width:100%;
+    /* background-color: yellow; */
+    float: left;
+    display: flex; justify-content: center;
+    font-size: 2rem; 
+    /* font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+}
+.pro_3_content{
+    height: 150px; width: 100%;
+    display: flex; justify-content: center;
+    /* background-color: blue;  */
+    float: left; padding-left: 30px;
+    inline-size: 300px; /* line limited to 300px */
+    overflow-wrap: inherit;
+    
+    line-height: 20px;
+}
+.pro_3_btn{
+    padding: 20px 40px;
+    /* margin-top: 250px;  */
+    color: white;
+    background-color:green; 
+    border:none ; border-radius: 10px;
+    font-weight:bolder; 
+    display: flex; justify-content: left; 
+}
+.pro_3_btn:hover{
+    cursor: pointer;
+}
+
+/* resume________________________________________________________________________________________________________________________________________________________________ */
+
+.resume{
+    height: 120vh; width: 100%;
+    background-color: lightskyblue;
+    display: flex; align-items: center;
+}
+.cv_img{
+    height: 120vh; width: 100%; 
+    float:left; z-index: 2;
+}
+.res_box{
+    height:30vh;width: 40%;
+    background-color: rgba(0, 0, 0, 0.452);
+    position: absolute; 
+    margin-left: 10vh;
+    float: left; z-index: 20;
+    display: flex; align-items: center;
+}
+.res_box>h1{
+    font-size: 2rem; 
+    /* font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+    color: white;
+    /* background-color: red;  */
+    margin-left: 10%;
+    width: 50%;
+    float: left;
+}
+.res_box>button{
+    padding: 15px 25px;
+    /* margin-top: 250px;  */
+    float: left;
+    color: white;
+    background-color:rgb(163, 163, 163); 
+    border:none ; border-radius: 10px;
+    font-weight:bolder; 
+    /* display: flex; justify-content: left;     */
+}
+.res_box>button:hover{
+    cursor: pointer;
+}
+
+/* contact form ----------------------------------------------------------------------------------------------------------------------------- */
+.contact{
+    height: 90vh; width: 100%;
+    /* background-color: yellowgreen; */
+    display: flex; align-items: center; justify-content: center;
+}
+.contact_box{
+    height: 75vh; width: 40%;
+    background-color: #e9d6d6c1;
+    border-radius: 2rem;
+}
+.con_detail{
+    padding-top: 5vh;
+    height: 15vh; width: 100%;
+    /* background-color: red; */
+    
+    display: grid;
+    grid-template-rows: 1fr .5fr; grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2px; column-gap: 2px;
+}
+.con_grid_item{
+    /* background-color: beige; */
+}
+.con_grid_item>a{
+    color: black;
+}
+#g1{
+    grid-column-start: 1; grid-column-end: 4;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 1.5rem; 
+    /* font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px; */
+}
+#g2{
+    display: flex; justify-content: center; align-items: center;
+}
+#g3{
+    display: flex; justify-content: center; align-items: center;
+}
+#g4{
+    display: flex; justify-content: center; align-items: center;
+}
+
+/* -----------------------------------------problem(not aligning center)---------------------------------------------- */
+.con_form{
+    /* display: flex; justify-content: center;  */
+    height: 50vh; width: 100%;
+    padding-top: 2vh;
+    /* background-color: orange; */
+}
+.s_name{
+    padding: 10px; width: 80%;
+    margin:1vh ;
+    border-radius: 10px; border:none;
+}
+.s_mail{
+    padding: 10px; width: 80%;
+    margin:1vh ;
+    border-radius: 10px; border:none;
+}
+.s_mess{
+    padding: 10px; width: 80%;
+    margin:1vh ;
+    border-radius: 10px; border:none;
+}
+.s_btn{
+    margin:1vh ;
+    padding: 10px 30px;
+    color: white;
+    background-color:green; 
+    border:none ; border-radius: 10px;
+    font-weight:bolder;  
+}
+.s_btn:hover{
+    cursor: pointer;
+}
